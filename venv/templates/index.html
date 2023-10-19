@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+</head>
+<body>
+    <div class="container" style="font-family: 'Poppins', sans-serif;">
+        <div class="banner">
+            <img src="{{ url_for('static', filename='banner.png') }}" alt="Banner Image">
+        </div>
+        <h1 style="font-family: 'Poppins', sans-serif;">AI Primary Immunodeficiency Prediction</h1>
+        <form method="post" enctype="multipart/form-data">
+            <label for="api_key">OpenAI API Key:</label>
+            <input type="text" name="api_key" value="sk-blSLXPdzgxo2LKtdgKWGT3BlbkFJsUHBELdIdoVdQa0HfQlWUU" required><br>
+            <br/>
+            <label for="pdf_path">Upload PDF File:</label>
+            <input type="text" name="pdf_file" accept=".pdf"  value="C:\Users\EstebanRestrepo\OneDrive - OMNIVIDA SAS\Documentos omnivida\Proyectos\UNICEF\WEB IA\venv\HCE.pdf" required>
+            <br />
+            <br />
+            <label for="question">Ask a question:</label>
+            <textarea name="question" rows="4" required></textarea><br>
+            <br />
+            <input type="submit" value="Get Response">
+        </form>
+        <h2>Response:</h2>
+        <p>{{ response }}</p>
+    </div>
+</body>
+</html>

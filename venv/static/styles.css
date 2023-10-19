@@ -1,0 +1,27 @@
+body {
+    background-color: #2596BE; /* Fondo azul claro */
+    margin: 0;
+    padding: 0;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.centered-content {
+    padding: 20px;
+}
+
+.banner img {
+    width: 100%;
+    max-height: 200px; /* Ajusta la altura de la imagen del banner */
+}
